@@ -155,4 +155,4 @@ with gr.Blocks(theme=gr.themes.Soft(), title="ECG AI Diagnostic System") as demo
                 text_out = gr.Textbox(label="Diagnostic Results", lines=10)
         btn_csv.click(fn=predict_csv, inputs=file_in, outputs=[plot_out, text_out])
 
-demo.launch()
+demo.launch(server_name="0.0.0.0", server_port=8501)
