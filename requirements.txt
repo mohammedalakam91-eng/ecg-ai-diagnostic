@@ -1,6 +1,6 @@
 streamlit
-tensorflow-cpu
-numpy
+tensorflow
+numpy<2.0.0
 pandas
 pillow
 scikit-learn
